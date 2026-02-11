@@ -6,10 +6,10 @@ import { Button } from '@/components/ui/button';
 import { Heart, Users, Globe, Award } from 'lucide-react';
 
 export default function Home() {
-  return (
-    <>
+  return ( 
+    <>     
       <Navbar />
-      <main className="flex-1">
+      <main className="flex-1"> 
         {/* Hero Section */}
         <section className="relative min-h-screen md:min-h-[600px] flex items-center justify-center overflow-hidden">
           {/* Background Image */}

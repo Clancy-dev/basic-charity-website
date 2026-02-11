@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 font-bold text-xl mb-4">
               <Heart className="w-6 h-6" fill="currentColor" />
-              <span>Hope</span>
+              <span>Hope Foundation</span>
             </div>
             <p className="text-sm opacity-90">
               Making a difference in communities worldwide, one heart at a time.
