@@ -1,38 +1,11 @@
 'use client';
 
 import React from "react"
-
-import { useState } from 'react';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
-import { Button } from '@/components/ui/button';
-import { Mail, Phone, MapPin, Heart, Send } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    setTimeout(() => setSubmitted(false), 5000);
-  };
-
   return (
     <>
       <Navbar />
@@ -51,171 +24,55 @@ export default function Contact() {
 
         {/* Contact Section */}
         <section className="py-16 md:py-24">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-3 gap-8 md:gap-6 mb-12 md:mb-16">
-              {/* Contact Info Cards */}
-              <div className="bg-muted/30 rounded-lg p-6 md:p-8 border border-border hover:shadow-md transition">
-                <div className="flex items-center gap-4 mb-4">
-                  <Mail className="w-8 h-8 text-primary flex-shrink-0" />
-                  <h3 className="text-lg font-bold text-foreground">Email</h3>
-                </div>
-                <p className="text-foreground/80 mb-2">Reach out to us anytime</p>
-                <a href="mailto:hello@hopefoundation.org" className="text-primary font-semibold hover:opacity-80 transition">
-                  hello@hopefoundation.org
-                </a>
-              </div>
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid md:grid-cols-3 gap-8 md:gap-6">
+      
+      {/* Email Card */}
+      <div className="bg-muted/30 rounded-lg p-6 md:p-8 border border-border hover:shadow-md transition">
+        <div className="flex items-center gap-4 mb-4">
+          <Mail className="w-8 h-8 text-primary flex-shrink-0" />
+          <h3 className="text-lg font-bold text-foreground">Email</h3>
+        </div>
+        <p className="text-foreground/80 mb-2">Reach out to us anytime</p>
+        <a 
+          href="mailto:hopecrestfoundation@gmail.com" 
+          className="text-primary font-semibold hover:opacity-80 transition block"
+        >
+          hopecrestfoundation@gmail.com
+        </a>
+      </div>
 
-              <div className="bg-muted/30 rounded-lg p-6 md:p-8 border border-border hover:shadow-md transition">
-                <div className="flex items-center gap-4 mb-4">
-                  <Phone className="w-8 h-8 text-primary flex-shrink-0" />
-                  <h3 className="text-lg font-bold text-foreground">Phone</h3>
-                </div>
-                <p className="text-foreground/80 mb-2">Call us during business hours</p>
-                <a href="tel:+1-555-0123" className="text-primary font-semibold hover:opacity-80 transition">
-                  (555) 0123
-                </a>
-              </div>
+      {/* Phone Card */}
+      <div className="bg-muted/30 rounded-lg p-6 md:p-8 border border-border hover:shadow-md transition">
+        <div className="flex items-center gap-4 mb-4">
+          <Phone className="w-8 h-8 text-primary flex-shrink-0" />
+          <h3 className="text-lg font-bold text-foreground">Phone</h3>
+        </div>
+        <p className="text-foreground/80 mb-2">Call us during business hours</p>
+        <div className="text-primary font-semibold space-y-1">
+          <a href="tel:+256770982239" className="block hover:opacity-80 transition">+256 770 982 239</a>
+          <a href="tel:+256707021312" className="block hover:opacity-80 transition">+256 707 021 312</a>
+        </div>
+      </div>
 
-              <div className="bg-muted/30 rounded-lg p-6 md:p-8 border border-border hover:shadow-md transition">
-                <div className="flex items-center gap-4 mb-4">
-                  <MapPin className="w-8 h-8 text-primary flex-shrink-0" />
-                  <h3 className="text-lg font-bold text-foreground">Address</h3>
-                </div>
-                <p className="text-foreground/80 mb-2">Visit our main office</p>
-                <p className="text-primary font-semibold">
-                  123 Hope Street<br />
-                  New York, NY 10001
-                </p>
-              </div>
-            </div>
+      {/* Address Card */}
+      <div className="bg-muted/30 rounded-lg p-6 md:p-8 border border-border hover:shadow-md transition">
+        <div className="flex items-center gap-4 mb-4">
+          <MapPin className="w-8 h-8 text-primary flex-shrink-0" />
+          <h3 className="text-lg font-bold text-foreground">Address</h3>
+        </div>
+        <p className="text-foreground/80 mb-2">Visit us</p>
+        <p className="text-primary font-semibold space-y-1">
+          P.O Box 9781 <br />
+          Bugema, <br />
+          Mbale - Uganda.
+        </p>
+      </div>
 
-            {/* Contact Form and Social */}
-            <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-              {/* Form */}
-              <div className="md:col-span-2">
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">Send us a Message</h2>
-                
-                {submitted && (
-                  <div className="bg-secondary/20 border-l-4 border-secondary text-secondary px-6 py-4 rounded mb-6">
-                    <p className="font-semibold">Thank you for your message!</p>
-                    <p className="text-sm opacity-90">We'll get back to you as soon as possible.</p>
-                  </div>
-                )}
+    </div>
+  </div>
+</section>
 
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-2">
-                      Your Name *
-                    </label>
-                    <input
-                      id="name"
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition"
-                      placeholder="John Smith"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-semibold text-foreground mb-2">
-                      Email Address *
-                    </label>
-                    <input
-                      id="email"
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition"
-                      placeholder="john@example.com"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-semibold text-foreground mb-2">
-                      Subject *
-                    </label>
-                    <input
-                      id="subject"
-                      type="text"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition"
-                      placeholder="How can we help?"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-semibold text-foreground mb-2">
-                      Message *
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                      rows={6}
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition resize-none"
-                      placeholder="Tell us about your inquiry..."
-                    />
-                  </div>
-
-                  <Button 
-                    type="submit" 
-                    className="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 gap-2 h-12"
-                  >
-                    <Send className="w-4 h-4" />
-                    Send Message
-                  </Button>
-                </form>
-              </div>
-
-              {/* Social Links */}
-              <div>
-                <h3 className="text-2xl font-bold text-foreground mb-6">Follow Us</h3>
-                <p className="text-foreground/80 mb-8">Connect with us on social media to stay updated on our latest projects and impact stories.</p>
-                
-                <div className="space-y-4">
-                  {[
-                    { name: 'Facebook', handle: '@hopefoundation' },
-                    { name: 'Twitter', handle: '@hopefdn' },
-                    { name: 'Instagram', handle: '@hopefoundation' },
-                    { name: 'LinkedIn', handle: 'Hope Foundation' }
-                  ].map((social, i) => (
-                    <a 
-                      key={i}
-                      href="#" 
-                      className="block p-4 border border-border rounded-lg hover:bg-primary/5 transition hover:border-primary/50"
-                    >
-                      <p className="font-semibold text-foreground hover:text-primary transition">{social.name}</p>
-                      <p className="text-sm text-foreground/60">{social.handle}</p>
-                    </a>
-                  ))}
-                </div>
-
-                {/* Call to Action */}
-                <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg p-6 mt-8 border border-primary/20">
-                  <Heart className="w-6 h-6 text-primary mb-3" />
-                  <h4 className="font-bold text-foreground mb-2">Ready to Make an Impact?</h4>
-                  <p className="text-sm text-foreground/80 mb-4">Your support can change lives.</p>
-                  <button 
-                    onClick={() => alert('Donation link would redirect to payment page')}
-                    className="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-2 px-4 rounded-lg transition text-sm"
-                  >
-                    Donate Now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* FAQ Section */}
         <section className="py-16 md:py-24 bg-muted/20">
@@ -230,11 +87,11 @@ export default function Contact() {
                 },
                 {
                   q: 'Can I get a tax receipt?',
-                  a: 'Yes! Hope Foundation is a registered 501(c)(3) nonprofit. All donations are tax-deductible. You\'ll receive a receipt automatically via email.'
+                  a: 'Yes! Hope Crest Foundation is a registered nonprofit. All donations are tax-deductible. You\'ll receive a receipt automatically via email.'
                 },
                 {
                   q: 'How can I volunteer?',
-                  a: 'We have both in-person and remote volunteering opportunities. Visit our Volunteer page or contact us directly to discuss how you can help!'
+                  a: 'We have both in-person and remote volunteering opportunities. Contact us directly to discuss how you can help!'
                 },
                 {
                   q: 'Do you work with corporate partners?',

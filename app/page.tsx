@@ -16,13 +16,13 @@ export default function Home() {
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: 'url(/charity-hero.jpg)',
+              backgroundImage: 'url(/hope-crest-foundation-hero.jpg)',
               backgroundAttachment: 'fixed'
             }}
           />
           
           {/* Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70" />
           
           {/* Content */}
           <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 md:space-y-8 py-20 md:py-32">
@@ -53,114 +53,118 @@ export default function Home() {
         </section>
 
         {/* Stats Section */}
-        <section className="py-16 md:py-20 bg-white">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-4 gap-8 md:gap-4">
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">50K+</div>
-                <p className="text-foreground/70 font-medium">Lives Impacted</p>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">25</div>
-                <p className="text-foreground/70 font-medium">Countries Served</p>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">$5M+</div>
-                <p className="text-foreground/70 font-medium">Funds Distributed</p>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">500+</div>
-                <p className="text-foreground/70 font-medium">Active Volunteers</p>
-              </div>
-            </div>
-          </div>
-        </section>
+      <section className="py-16 md:py-20 bg-white">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid md:grid-cols-4 gap-8 md:gap-4">
+      <div className="text-center">
+        <div className="text-4xl md:text-5xl font-bold text-primary mb-2">500+</div>
+        <p className="text-foreground/70 font-medium">Lives Touched</p>
+      </div>
+      <div className="text-center">
+        <div className="text-4xl md:text-5xl font-bold text-primary mb-2">1</div>
+        <p className="text-foreground/70 font-medium">Country Served</p>
+      </div>
+      <div className="text-center">
+        <div className="text-4xl md:text-5xl font-bold text-primary mb-2">$5K+</div>
+        <p className="text-foreground/70 font-medium">Funds Raised</p>
+      </div>
+      <div className="text-center">
+        <div className="text-4xl md:text-5xl font-bold text-primary mb-2">10+</div>
+        <p className="text-foreground/70 font-medium">Active Volunteers</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         {/* Mission Section */}
-        <section className="py-16 md:py-24">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12 md:mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 text-balance">Why Hope Foundation?</h2>
-              <p className="text-lg text-foreground/70 max-w-2xl mx-auto">We're committed to creating sustainable change through transparency, community partnership, and measurable impact.</p>
-            </div>
+      <section className="py-16 md:py-24">
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-12 md:mb-16">
+      <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 text-balance">Why Hope Crest Foundation?</h2>
+      <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+        We are a new charity dedicated to making a meaningful difference in our community, starting small, growing with your support, and staying transparent every step of the way.
+      </p>
+    </div>
 
-            <div className="grid md:grid-cols-4 gap-6 md:gap-8">
-              {[
-                {
-                  icon: Heart,
-                  title: 'Community First',
-                  description: 'We listen to communities and co-create solutions that address their real needs.'
-                },
-                {
-                  icon: Users,
-                  title: 'Transparency',
-                  description: 'Every dollar is tracked. See exactly where your donation makes an impact.'
-                },
-                {
-                  icon: Globe,
-                  title: 'Global Reach',
-                  description: 'Operating in 25 countries with local teams who understand each community.'
-                },
-                {
-                  icon: Award,
-                  title: 'Proven Results',
-                  description: '95% of funds go directly to programs. We measure every impact we create.'
-                }
-              ].map((item, i) => {
-                const Icon = item.icon;
-                return (
-                  <div key={i} className="bg-muted/30 rounded-lg p-6 md:p-8 hover:shadow-md transition">
-                    <Icon className="w-10 h-10 text-primary mb-4" />
-                    <h3 className="font-bold text-lg text-foreground mb-2">{item.title}</h3>
-                    <p className="text-foreground/70 text-sm leading-relaxed">{item.description}</p>
-                  </div>
-                );
-              })}
-            </div>
+    <div className="grid md:grid-cols-4 gap-6 md:gap-8">
+      {[
+        {
+          icon: Heart,
+          title: 'Community Focused',
+          description: 'We start by understanding local needs and supporting initiatives that truly matter to our community.'
+        },
+        {
+          icon: Users,
+          title: 'Transparency',
+          description: 'Your support matters. We ensure clear tracking of every donation, showing how it helps real people.'
+        },
+        {
+          icon: Globe,
+          title: 'Growing Reach',
+          description: 'We aim to expand our efforts gradually, starting locally and building towards broader impact.'
+        },
+        {
+          icon: Award,
+          title: 'Building Trust',
+          description: 'As a new foundation, we focus on accountability and delivering measurable outcomes from the very beginning.'
+        }
+      ].map((item, i) => {
+        const Icon = item.icon;
+        return (
+          <div key={i} className="bg-muted/30 rounded-lg p-6 md:p-8 hover:shadow-md transition">
+            <Icon className="w-10 h-10 text-primary mb-4" />
+            <h3 className="font-bold text-lg text-foreground mb-2">{item.title}</h3>
+            <p className="text-foreground/70 text-sm leading-relaxed">{item.description}</p>
           </div>
-        </section>
+        );
+      })}
+    </div>
+  </div>
+</section>
+
 
         {/* Featured Projects */}
-        <section className="py-16 md:py-24 bg-muted/20">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12 md:mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 text-balance">Our Latest Projects</h2>
-              <p className="text-lg text-foreground/70">See how your support is creating real change</p>
-            </div>
+       <section className="py-16 md:py-24 bg-muted/20">
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-12 md:mb-16">
+      <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 text-balance">Our Early Projects</h2>
+      <p className="text-lg text-foreground/70">See how small efforts are creating hope and change for children and communities</p>
+    </div>
 
-            <div className="grid md:grid-cols-3 gap-6 md:gap-8">
-              {[
-                {
-                  title: 'Education Initiative',
-                  description: 'Providing scholarships and educational resources to 5,000 students in rural areas.',
-                  impact: '5,000 students supported',
-                  color: 'bg-primary'
-                },
-                {
-                  title: 'Clean Water Project',
-                  description: 'Installing sustainable water systems in villages, improving health for entire communities.',
-                  impact: '15,000 people access clean water',
-                  color: 'bg-secondary'
-                },
-                {
-                  title: 'Healthcare Access',
-                  description: 'Running mobile clinics and health awareness programs in underserved regions.',
-                  impact: '30,000 free health checkups',
-                  color: 'bg-primary'
-                }
-              ].map((project, i) => (
-                <div key={i} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition border border-border">
-                  <div className={`${project.color} h-2`} />
-                  <div className="p-6 md:p-8">
-                    <h3 className="font-bold text-xl text-foreground mb-3">{project.title}</h3>
-                    <p className="text-foreground/70 text-sm leading-relaxed mb-4">{project.description}</p>
-                    <div className="text-sm font-semibold text-primary">{project.impact}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
+    <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+      {[
+        {
+          title: 'School Support Program',
+          description: 'Providing learning materials, school uniforms, and mentorship to children in need.',
+          impact: '100+ children supported',
+          color: 'bg-primary'
+        },
+        {
+          title: 'Community Health Awareness',
+          description: 'Organizing workshops and free health checkups to promote wellness in our neighborhood.',
+          impact: '200+ community members reached',
+          color: 'bg-secondary'
+        },
+        {
+          title: 'Nutrition & Care',
+          description: 'Offering nutritious meals and basic care to children in vulnerable situations.',
+          impact: '150+ children served',
+          color: 'bg-primary'
+        }
+      ].map((project, i) => (
+        <div key={i} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition border border-border">
+          <div className={`${project.color} h-2`} />
+          <div className="p-6 md:p-8">
+            <h3 className="font-bold text-xl text-foreground mb-3">{project.title}</h3>
+            <p className="text-foreground/70 text-sm leading-relaxed mb-4">{project.description}</p>
+            <div className="text-sm font-semibold text-primary">{project.impact}</div>
           </div>
-        </section>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
         {/* CTA Section */}
         <section className="bg-primary text-white py-16 md:py-20">

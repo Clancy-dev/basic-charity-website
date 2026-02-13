@@ -11,76 +11,80 @@ export default function About() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-primary/10 to-secondary/10 py-16 md:py-24">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
-              Our Story & Mission
-            </h1>
-            <p className="text-lg md:text-xl text-foreground/80 max-w-3xl">
-              Founded in 2015, Hope Foundation began with a simple belief: every person deserves access to education, healthcare, and clean water. Today, we work across 25 countries to make that belief a reality.
-            </p>
-          </div>
+         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+         <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
+          Our Story & Mission
+         </h1>
+        <p className="text-lg md:text-xl text-foreground/80 max-w-3xl">
+          Founded in 2025, Hope Crest Foundation started with a simple belief: every child and community deserves a chance to thrive through education, healthcare, and basic needs support. As a new foundation based in Fort Portal, Uganda, we are beginning small, focusing on impactful local projects, and growing with the support of volunteers and donors who share our vision for hope and positive change.
+      </p>
+  </div>
         </section>
 
         {/* Mission & Vision */}
-        <section className="py-16 md:py-24">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-12 md:gap-16">
-              <div>
-                <h2 className="text-3xl font-bold text-foreground mb-6">Our Mission</h2>
-                <p className="text-foreground/80 text-lg leading-relaxed mb-6">
-                  To create sustainable, equitable solutions that empower communities to build healthier, more prosperous futures. We believe change happens when communities lead the way.
-                </p>
-                <div className="space-y-4">
-                  {[
-                    'Centered on community needs',
-                    'Transparent and accountable',
-                    'Sustainable and long-term',
-                    'Evidence-driven approach'
-                  ].map((item, i) => (
-                    <div key={i} className="flex gap-3 items-start">
-                      <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-foreground font-medium">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <h2 className="text-3xl font-bold text-foreground mb-6">Our Vision</h2>
-                <p className="text-foreground/80 text-lg leading-relaxed mb-6">
-                  A world where everyone, regardless of where they're born, has the opportunity to live a healthy, educated, and dignified life.
-                </p>
-                <div className="bg-primary/10 rounded-lg p-6 border-l-4 border-primary">
-                  <p className="text-foreground text-lg font-semibold italic">
-                    "We don't give handouts, we build partnerships. Together, we create lasting change."
-                  </p>
-                  <p className="text-primary font-bold mt-4">— Hope Foundation Leadership Team</p>
-                </div>
-              </div>
+       <section className="py-16 md:py-24">
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid md:grid-cols-2 gap-12 md:gap-16">
+      <div>
+        <h2 className="text-3xl font-bold text-foreground mb-6">Our Mission</h2>
+        <p className="text-foreground/80 text-lg leading-relaxed mb-6">
+          To support children and communities in Mbale and nearby areas by providing education, healthcare, and basic needs. We start small, listen to local communities, and aim to create meaningful, lasting impact as we grow.
+        </p>
+        <div className="space-y-4">
+          {[
+            'Focused on local community needs',
+            'Transparent with all support received',
+            'Starting small with sustainable impact',
+            'Committed to measurable results'
+          ].map((item, i) => (
+            <div key={i} className="flex gap-3 items-start">
+              <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+              <span className="text-foreground font-medium">{item}</span>
             </div>
-          </div>
-        </section>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <h2 className="text-3xl font-bold text-foreground mb-6">Our Vision</h2>
+        <p className="text-foreground/80 text-lg leading-relaxed mb-6">
+          A future where every child and community in our region has access to education, healthcare, and opportunities to thrive—building hope, one project at a time.
+        </p>
+        <div className="bg-primary/10 rounded-lg p-6 border-l-4 border-primary">
+          <p className="text-foreground text-lg font-semibold italic">
+            "We may be small, but our goal is big: to create hope, empower children, and build a foundation for positive change."
+          </p>
+          <p className="text-primary font-bold mt-4">— Hope Crest Foundation Leadership Team</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         {/* Our Impact */}
         <section className="py-16 md:py-24 bg-muted/20">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">Our Impact by Numbers</h2>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {[
-                { number: '50K+', label: 'Lives Impacted' },
-                { number: '25', label: 'Countries' },
-                { number: '$5M+', label: 'Distributed' },
-                { number: '500+', label: 'Volunteers' }
-              ].map((stat, i) => (
-                <div key={i} className="bg-white rounded-lg p-6 md:p-8 text-center border border-border">
-                  <div className="text-4xl md:text-5xl font-bold text-primary mb-2">{stat.number}</div>
-                  <p className="text-foreground/70 font-medium">{stat.label}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
+      Our Impact by Numbers
+    </h2>
+    
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {[
+        { number: '150+', label: 'Children Supported' },
+        { number: '5', label: 'Community Served' },
+        { number: '$5K+', label: 'Funds Raised' },
+        { number: '10+', label: 'Active Volunteers' }
+      ].map((stat, i) => (
+        <div key={i} className="bg-white rounded-lg p-6 md:p-8 text-center border border-border">
+          <div className="text-4xl md:text-5xl font-bold text-primary mb-2">{stat.number}</div>
+          <p className="text-foreground/70 font-medium">{stat.label}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
         {/* Our Values */}
         <section className="py-16 md:py-24">
@@ -123,29 +127,57 @@ export default function About() {
           </div>
         </section>
 
-        {/* Meet the Team */}
-        <section className="py-16 md:py-24 bg-muted/20">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">Meet Our Leadership</h2>
-            
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                { name: 'Sarah Johnson', role: 'Executive Director', bio: 'Global development expert with 20+ years in international humanitarian work.' },
-                { name: 'Marcus Chen', role: 'Chief Operations Officer', bio: 'Operations leader focused on building sustainable, scalable programs with local impact.' },
-                { name: 'Amara Okafor', role: 'Director of Programs', bio: 'Community development specialist dedicated to partnership-led approaches.' }
-              ].map((person, i) => (
-                <div key={i} className="bg-white rounded-lg overflow-hidden border border-border hover:shadow-md transition">
-                  <div className="h-32 bg-gradient-to-r from-primary to-secondary" />
-                  <div className="p-6">
-                    <h3 className="text-lg font-bold text-foreground">{person.name}</h3>
-                    <p className="text-primary font-semibold text-sm mb-3">{person.role}</p>
-                    <p className="text-foreground/70 text-sm leading-relaxed">{person.bio}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+       
+       {/* Meet the Team */}
+<section className="py-16 md:py-24 bg-muted/20">
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
+      Meet Our Leadership
+    </h2>
+    
+    <div className="grid md:grid-cols-3 gap-8">
+      {[
+        {
+          name: 'Kyambadde Hillary',
+          role: 'Founder',
+          bio: 'Passionate about community development and helping children access education and healthcare.',
+          photo: '/person 1.png' 
+        },
+        {
+          name: 'Sarah Mbabazi',
+          role: 'Programs Coordinator',
+          bio: 'Focused on creating meaningful local projects and supporting community-led initiatives.',
+          photo: '/person 2.png'
+        },
+        {
+          name: 'David Okello',
+          role: 'Operations',
+          bio: 'Ensures smooth implementation of programs and transparent management of resources.',
+          photo: '/person 3.png'
+        }
+      ].map((person, i) => (
+        <div key={i} className="bg-white rounded-lg overflow-hidden border border-border hover:shadow-md transition">
+          <div className="w-full aspect-square">
+            <img
+              src={person.photo}
+              alt={person.name}
+              className="w-full h-full object-cover"
+            />
           </div>
-        </section>
+          <div className="p-6">
+            <h3 className="text-lg font-bold text-foreground">{person.name}</h3>
+            <p className="text-primary font-semibold text-sm mb-3">{person.role}</p>
+            <p className="text-foreground/70 text-sm leading-relaxed">{person.bio}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+
+
 
         {/* CTA */}
         <section className="py-16 md:py-20 bg-gradient-to-br from-primary to-primary/80">

@@ -19,25 +19,23 @@ export default function DonatePage() {
     {
       id: 'bank',
       icon: Building2,
-      title: 'Bank Transfer',
-      description: 'Direct transfer to our charity account',
+      title: 'Bank Transfer (Stanbic Bank)',
+      description: 'Direct transfer to our Hope Crest Foundation account',
       details: [
-        { label: 'Bank Name', value: 'Global Charity Bank' },
-        { label: 'Account Holder', value: 'Hope Foundation' },
-        { label: 'Account Number', value: '1234567890' },
-        { label: 'SWIFT Code', value: 'GCBKUS33' },
-        { label: 'Routing Number', value: '021000021' }
+        { label: 'Bank Name', value: 'Stanbic Bank Uganda' },
+        { label: 'Account Holder', value: 'Hope Crest Foundation' },
+        { label: 'Account Number', value: '0123456789' },
+        { label: 'Branch', value: 'Mbale' },
       ]
     },
     {
       id: 'mobile',
       icon: Smartphone,
       title: 'Mobile Money',
-      description: 'Send donations via mobile payment services',
+      description: 'Send donations via MTN Mobile Money',
       details: [
-        { label: 'MTN Mobile Money', value: '+1-555-123-4567' },
-        { label: 'Airtel Money', value: '+1-555-234-5678' },
-        { label: 'M-Pesa', value: '+1-555-345-6789' }
+        { label: 'MTN Mobile Money', value: '+256 770 982 239'},
+        { label: 'Airtel Money', value: '+256 707 021 312' },
       ]
     }
   ];
@@ -53,7 +51,7 @@ export default function DonatePage() {
               Support Our <span className="text-primary">Mission</span>
             </h1>
             <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-              Your generous donation helps us create lasting change in communities around the world.
+              Your generous donation helps Hope Crest Foundation improve education, healthcare, and livelihoods in communities across Uganda.
             </p>
           </div>
         </section>
@@ -64,7 +62,7 @@ export default function DonatePage() {
             <div className="text-center mb-12 md:mb-16">
               <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 text-balance">How to Donate</h2>
               <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-                Choose your preferred payment method below. All donations are secure and tax-deductible.
+                Choose your preferred payment method below. All donations are safe and secure.
               </p>
             </div>
 
@@ -122,7 +120,7 @@ export default function DonatePage() {
                 <div>
                   <h3 className="text-2xl font-bold text-foreground mb-2">After You Donate</h3>
                   <p className="text-foreground/70">
-                    Help us confirm your generous contribution
+                    Help us confirm your generous contribution.
                   </p>
                 </div>
               </div>
@@ -131,21 +129,21 @@ export default function DonatePage() {
                 <div className="border-l-4 border-primary pl-4 py-2">
                   <p className="font-semibold text-foreground mb-1">Step 1: Send Your Donation</p>
                   <p className="text-foreground/70 text-sm">
-                    Use the bank transfer or mobile money details above to send your donation.
+                    Use the bank transfer or MTN Mobile Money details above to send your donation.
                   </p>
                 </div>
 
                 <div className="border-l-4 border-secondary pl-4 py-2">
                   <p className="font-semibold text-foreground mb-1">Step 2: Email Your Proof</p>
                   <p className="text-foreground/70 text-sm">
-                    Send a screenshot or photo of your payment receipt to <span className="font-mono bg-muted px-2 py-1 rounded text-primary">info@hopefoundation.org</span>
+                    Send a screenshot or photo of your payment receipt to <span className="font-mono bg-muted px-2 py-1 rounded text-primary">hopecrestfoundation@gmail.com</span>
                   </p>
                 </div>
 
                 <div className="border-l-4 border-primary pl-4 py-2">
                   <p className="font-semibold text-foreground mb-1">Step 3: Receive Confirmation</p>
                   <p className="text-foreground/70 text-sm">
-                    We'll send you a tax-deductible receipt and impact update within 24 hours.
+                    We'll send you a tax-deductible receipt and update on the impact of your donation.
                   </p>
                 </div>
               </div>
@@ -163,10 +161,10 @@ export default function DonatePage() {
 
             <div className="grid md:grid-cols-4 gap-6">
               {[
-                { amount: '$10', impact: 'Provides 2 meals for a child' },
-                { amount: '$25', impact: 'Supplies school materials for 5 students' },
-                { amount: '$100', impact: 'Provides clean water for a family for a month' },
-                { amount: '$500', impact: 'Funds 2 medical check-ups in rural areas' }
+              { amount: '$5', impact: 'Provides 2 meals for a child' }, 
+              { amount: '$20', impact: 'Supplies school materials for 5 students' }, 
+              { amount: '$100', impact: 'Provides clean water for a family for a month' },
+              { amount: '$500', impact: 'Funds 2 medical check-ups in rural areas' }
               ].map((item, i) => (
                 <div key={i} className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-lg p-6 md:p-8 text-center border border-border hover:shadow-md transition">
                   <div className="text-4xl font-bold text-primary mb-3">{item.amount}</div>
