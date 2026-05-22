@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     title: "About Hope Crest Foundation - Our Mission & Story",
     description:
       "Discover how Hope Crest Foundation is transforming lives in Uganda through education, healthcare, and community support initiatives.",
-    url: "https://www.hopecrestfoundation.vercel.app/about",
+    url: "https://hopecrestfoundation1.vercel.app/about",
     siteName: "Hope Crest Foundation",
     images: [
       {
-        url: "https://www.hopecrestfoundation.vercel.app/about-og.jpg",
+        url: "https://hopecrestfoundation1.vercel.app/about-og.jpg",
         width: 1200,
         height: 630,
         alt: "Hope Crest Foundation Team and Mission",
@@ -41,11 +41,11 @@ export const metadata: Metadata = {
     title: "About Hope Crest Foundation - Our Mission & Story",
     description:
       "Learn how Hope Crest Foundation is making an impact in Uganda through community support and charity programs.",
-    images: ["https://www.hopecrestfoundation.vercel.app/about-og.jpg"],
+    images: ["https://hopecrestfoundation1.vercel.app/about-og.jpg"],
   },
 
   alternates: {
-    canonical: "https://www.hopecrestfoundation.vercel.app/about",
+    canonical: "https://hopecrestfoundation1.vercel.app/about",
   },
 };
 

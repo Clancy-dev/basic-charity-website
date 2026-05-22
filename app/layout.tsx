@@ -9,7 +9,7 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.hopecrestfoundation.vercel.app"),
+  metadataBase: new URL("https://hopecrestfoundation1.vercel.app/"),
 
   title: {
     default: "Hope Crest Foundation - Making a Difference Together",
@@ -62,11 +62,11 @@ export const metadata: Metadata = {
     title: "Hope Crest Foundation - Making a Difference Together",
     description:
       "Support Hope Crest Foundation in creating real change. Donate, volunteer, and be part of something impactful.",
-    url: "https://www.hopecrestfoundation.vercel.app",
+    url: "https://hopecrestfoundation1.vercel.app/",
     siteName: "Hope Crest Foundation",
     images: [
       {
-        url: "https://www.hopecrestfoundation.vercel.app/og-image.jpg",
+        url: "https://hopecrestfoundation1.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Hope Crest Foundation",
@@ -81,14 +81,14 @@ export const metadata: Metadata = {
     title: "Hope Crest Foundation - Making a Difference Together",
     description:
       "Join Hope Crest Foundation in changing lives through donations and community support.",
-    images: ["https://www.hopecrestfoundation.vercel.app/og-image.jpg"],
+    images: ["https://hopecrestfoundation1.vercel.app/og-image.jpg"],
     creator: "@hopecrestfoundation",
   },
 
   category: "charity",
 
   alternates: {
-    canonical: "https://www.hopecrestfoundation.vercel.app",
+    canonical: "https://hopecrestfoundation1.vercel.app/",
   },
 };
 
