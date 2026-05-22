@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     title: "Make a Real Difference | Hope Crest Foundation",
     description:
       "Join Hope Crest Foundation and help create real impact. Support education, health, and nutrition programs for vulnerable communities.",
-    url: "https://www.hopecrestfoundation.vercel.app",
+    url: "https://hopecrestfoundation1.vercel.app",
     siteName: "Hope Crest Foundation",
     images: [
       {
-        url: "https://www.hopecrestfoundation.vercel.app/home-og.jpg",
+        url: "https://hopecrestfoundation1.vercel.app/home-og.jpg",
         width: 1200,
         height: 630,
         alt: "Hope Crest Foundation - Community Impact",
@@ -41,11 +41,11 @@ export const metadata: Metadata = {
     title: "Make a Real Difference | Hope Crest Foundation",
     description:
       "Your donation supports real people. Join Hope Crest Foundation and be part of meaningful change.",
-    images: ["https://www.hopecrestfoundation.vercel.app/home-og.jpg"],
+    images: ["https://hopecrestfoundation1.vercel.app/home-og.jpg"],
   },
 
   alternates: {
-    canonical: "https://www.hopecrestfoundation.vercel.app",
+    canonical: "https://hopecrestfoundation1.vercel.app",
   },
 };
 
