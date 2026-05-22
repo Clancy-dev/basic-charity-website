@@ -127,53 +127,6 @@ export default function About() {
           </div>
         </section>
 
-       
-       {/* Meet the Team */}
-<section className="py-16 md:py-24 bg-muted/20">
-  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
-      Meet Our Leadership
-    </h2>
-    
-    <div className="grid md:grid-cols-3 gap-8">
-      {[
-        {
-          name: 'Kyambadde Hillary',
-          role: 'Founder',
-          bio: 'Passionate about community development and helping children access education and healthcare.',
-          photo: '/person 1.png' 
-        },
-        {
-          name: 'Sarah Mbabazi',
-          role: 'Programs Coordinator',
-          bio: 'Focused on creating meaningful local projects and supporting community-led initiatives.',
-          photo: '/person 2.png'
-        },
-        {
-          name: 'David Okello',
-          role: 'Operations',
-          bio: 'Ensures smooth implementation of programs and transparent management of resources.',
-          photo: '/person 3.png'
-        }
-      ].map((person, i) => (
-        <div key={i} className="bg-white rounded-lg overflow-hidden border border-border hover:shadow-md transition">
-          <div className="w-full aspect-square">
-            <img
-              src={person.photo}
-              alt={person.name}
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="p-6">
-            <h3 className="text-lg font-bold text-foreground">{person.name}</h3>
-            <p className="text-primary font-semibold text-sm mb-3">{person.role}</p>
-            <p className="text-foreground/70 text-sm leading-relaxed">{person.bio}</p>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
 
 
 
